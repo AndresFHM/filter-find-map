@@ -11,7 +11,17 @@
 
 export function find(array, callback) {
   // Your code goes here...
-  
+
+  let foundArray = [];
+
+  for (let element of array) {
+    if (callback(element)) {
+      foundArray.push(element);
+    }
+  }
+
+  return foundArray[0];
+
 }
 
 
